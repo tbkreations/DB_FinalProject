@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageTitles {
+    font-size: 5vmin;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.universalButton {
+    padding: 3%;
+    background-color: black;
+    border: 3px solid green;
+    font-size: 3vmin;
+    color: green;
+    border-radius: 20px;
+    width: fit-content;
+    margin: .5rem auto;
+}
+
+.universalButton:hover {
+    animation: hover .5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.universalLink:hover {
+    cursor: pointer;
+    color: green;
+}
+
+@keyframes hover {
+    100% {
+        color: white;
+        background-color: rgb(121, 182, 137);
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .75);
+    }
+}
+.universalInput {
+    border: 2px solid rgb(121, 182, 137);
+    border-radius: 4px;
+    display: block;
+    outline: none;
+    font-size: 3vmin;
+    margin: 0 auto;
+}
+
+.universalInput:focus {
+    animation: focus .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes focus {
+    100% {
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .75);
+    }
+}
+
+.pageContent {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    margin: auto;
+}
